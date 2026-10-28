@@ -1,0 +1,113 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+}
+.navbar {
+    width: 100%;
+    min-height: 75px;
+    background-color: #202c33;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 25px;
+}
+.profile-section {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.profile-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #374248;
+    color: #ff3154;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.profile-info h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.profile-info p {
+    font-size: 12px;
+    color: #aebac1;
+}
+.navbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.navbar-actions button {
+    color: white;
+    cursor: pointer;
+}
+.add-button {
+    background: transparent;
+    border: 1px solid #526069;
+    border-radius: 20px;
+    padding: 10px 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+}
+.icon-button {
+    background: transparent;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.arrow {
+    font-size: 10px;
+    margin-left: 5px;
+}
+.add-button:hover,
+.icon-button:hover {
+    background-color: #374248;
+    border-radius: 8px;
+}
+@media (max-width: 600px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .profile-info h3 {
+        font-size: 13px;
+    }
+
+    .profile-info p {
+        font-size: 10px;
+    }
+
+    .navbar-actions {
+        gap: 5px;
+    }
+
+    .add-button span {
+        display: none;
+    }
+
+    .add-button {
+        padding: 10px;
+    }
+
+    .icon-button {
+        padding: 8px;
+        font-size: 15px;
+    }
+}

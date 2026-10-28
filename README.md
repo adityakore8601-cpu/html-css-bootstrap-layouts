@@ -55,9 +55,10 @@ Technologies: Flutter, Dart, Firebase
 - Prepare for software development internships.
 
 🤝 Connect With Me
+ 
+https://github.com/adityakore8601-cpu
 
-- https://github.com/adityakore8601-cpu
--https://www.linkedin.com/in/adityakore5b32a6321/
+https://www.linkedin.com/in/aditya-kore-5b32a6321/
 
 
 ⭐ Thanks for visiting my profile!what is put in inside the GitHub account

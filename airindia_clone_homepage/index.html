@@ -1,0 +1,346 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADISKYWAYS Airlines - Fly Beyond</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="navbar">
+            <a href="#" class="logo">
+                <span class="logo-symbol">✈</span>
+                ADISKYWAYS
+                <small>AIRLINES</small>
+            </a>
+
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#book">Book & Manage</a></li>
+                    <li><a href="#destinations">Where We Fly</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#offers">Offers</a></li>
+                </ul>
+            </nav>
+
+            <a href="#book" class="login-btn">Login / Sign Up</a>
+        </div>
+    </header>
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <span class="hero-label">EXPLORE THE WORLD WITH US</span>
+            <h1>Every Journey<br>Begins With A <span>Dream.</span></h1>
+            <p>Discover new destinations and experience the joy of flying.</p>
+            <a href="#book" class="hero-btn">Book Your Flight →</a>
+        </div>
+    </section>
+    <section class="booking-section" id="book">
+
+        <div class="booking-container">
+
+            <div class="booking-tabs">
+                <a href="#flight-form" class="active">✈ Book Flight</a>
+                <a href="#manage">Manage Booking</a>
+                <a href="#checkin">Check-in</a>
+                <a href="#status">Flight Status</a>
+            </div>
+
+            <div class="trip-options">
+                <label><input type="radio" name="trip" checked> One Way</label>
+                <label><input type="radio" name="trip"> Round Trip</label>
+                <label><input type="radio" name="trip"> Multi City</label>
+            </div>
+
+            <form class="flight-form" id="flight-form">
+
+                <div class="form-group">
+                    <label>From</label>
+                    <input type="text" placeholder="New Delhi (DEL)">
+                </div>
+
+                <div class="form-group">
+                    <label>To</label>
+                    <input type="text" placeholder="Mumbai (BOM)">
+                </div>
+
+                <div class="form-group">
+                    <label>Departure</label>
+                    <input type="date">
+                </div>
+
+                <div class="form-group">
+                    <label>Return</label>
+                    <input type="date">
+                </div>
+
+                <div class="form-group">
+                    <label>Passengers</label>
+                    <select>
+                        <option>1 Adult</option>
+                        <option>2 Adults</option>
+                        <option>3 Adults</option>
+                        <option>4 Adults</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Class</label>
+                    <select>
+                        <option>Economy</option>
+                        <option>Premium Economy</option>
+                        <option>Business</option>
+                        <option>First Class</option>
+                    </select>
+                </div>
+
+                <button type="button" class="flight-btn">SEARCH FLIGHTS →</button>
+
+            </form>
+
+            <div class="booking-note">
+                <span>✓ Secure Booking</span>
+                <span>✓ Flexible Travel Options</span>
+                <span>✓ Exclusive Offers</span>
+            </div>
+
+        </div>
+    </section>
+    <section class="offers section" id="offers">
+
+        <div class="heading">
+            <span>EXCLUSIVE OFFERS</span>
+            <h2>Special Fares For Your Next Journey</h2>
+            <p>Explore exciting travel offers and plan your next adventure.</p>
+        </div>
+
+        <div class="offer-grid">
+
+            <div class="offer-card">
+                <img src="https://images.unsplash.com/photo-1518684079-3c830dcef090?w=800" alt="Dubai city">
+                <div class="offer-content">
+                    <span>INTERNATIONAL TRAVEL</span>
+                    <h3>Discover Dubai</h3>
+                    <p>Experience modern architecture and beautiful destinations.</p>
+                    <a href="#book">Explore Offer →</a>
+                </div>
+            </div>
+
+            <div class="offer-card">
+                <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800" alt="Mountain travel">
+                <div class="offer-content">
+                    <span>HOLIDAY SPECIAL</span>
+                    <h3>Explore Beautiful Mountains</h3>
+                    <p>Make unforgettable memories on your next holiday.</p>
+                    <a href="#book">Explore Offer →</a>
+                </div>
+            </div>
+
+            <div class="offer-card">
+                <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?w=800" alt="Beach holiday">
+                <div class="offer-content">
+                    <span>SUMMER SPECIAL</span>
+                    <h3>Escape To The Beaches</h3>
+                    <p>Enjoy peaceful beaches and wonderful experiences.</p>
+                    <a href="#book">Explore Offer →</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="destinations section" id="destinations">
+
+        <div class="heading">
+            <span>OUR NETWORK</span>
+            <h2>Book Nonstop Direct Flights</h2>
+            <p>Connect with exciting destinations around the world.</p>
+        </div>
+
+        <div class="destination-grid">
+
+            <div class="destination-card">
+                <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=700" alt="London">
+                <div class="destination-info">
+                    <h3>London</h3>
+                    <p>United Kingdom</p>
+                    <span>DEL → LHR</span>
+                </div>
+            </div>
+
+            <div class="destination-card">
+                <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=700" alt="Dubai">
+                <div class="destination-info">
+                    <h3>Dubai</h3>
+                    <p>United Arab Emirates</p>
+                    <span>BOM → DXB</span>
+                </div>
+            </div>
+
+            <div class="destination-card">
+                <img src="https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?w=700" alt="Tokyo">
+                <div class="destination-info">
+                    <h3>Tokyo</h3>
+                    <p>Japan</p>
+                    <span>DEL → HND</span>
+                </div>
+            </div>
+
+            <div class="destination-card">
+                <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=700" alt="San Francisco">
+                <div class="destination-info">
+                    <h3>San Francisco</h3>
+                    <p>United States</p>
+                    <span>DEL → SFO</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="experience section" id="experience">
+
+        <div class="experience-image">
+            <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1000" alt="Airplane flying">
+        </div>
+
+        <div class="experience-content">
+            <span>THE SKYWAYS EXPERIENCE</span>
+            <h2>Travel Beyond Your Expectations</h2>
+            <p>
+                Enjoy a comfortable and memorable journey with our
+                thoughtfully designed travel experiences.
+                Discover a new way to explore the world.
+            </p>
+
+            <div class="experience-features">
+                <div>
+                    <h3>✈ Comfortable Flying</h3>
+                    <p>Enjoy a relaxing journey.</p>
+                </div>
+
+                <div>
+                    <h3>♧ Premium Services</h3>
+                    <p>Experience quality onboard services.</p>
+                </div>
+
+                <div>
+                    <h3>★ Global Destinations</h3>
+                    <p>Explore destinations worldwide.</p>
+                </div>
+            </div>
+
+            <a href="#book" class="dark-btn">Explore Experience →</a>
+        </div>
+
+    </section>
+    <section class="travel section">
+
+        <div class="heading">
+            <span>PLAN YOUR TRIP</span>
+            <h2>Everything You Need For Your Journey</h2>
+        </div>
+
+        <div class="travel-grid">
+
+            <div class="travel-card">
+                <div class="travel-icon">🧳</div>
+                <h3>Baggage Information</h3>
+                <p>Understand baggage allowances and travel guidelines.</p>
+                <a href="#footer">Know More →</a>
+            </div>
+
+            <div class="travel-card">
+                <div class="travel-icon">🌍</div>
+                <h3>Travel Documents</h3>
+                <p>Prepare important documents before your journey.</p>
+                <a href="#footer">Know More →</a>
+            </div>
+
+            <div class="travel-card">
+                <div class="travel-icon">💺</div>
+                <h3>Seat Selection</h3>
+                <p>Explore seating options for a comfortable journey.</p>
+                <a href="#footer">Know More →</a>
+            </div>
+
+            <div class="travel-card">
+                <div class="travel-icon">🍽</div>
+                <h3>In-flight Services</h3>
+                <p>Discover meals and onboard experiences.</p>
+                <a href="#footer">Know More →</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="app-section">
+
+        <div class="app-content">
+            <span>TRAVEL SMARTER</span>
+            <h2>Your Journey,<br>Always Within Reach.</h2>
+            <p>
+                Explore travel information and manage your journey
+                with our mobile-friendly travel experience.
+            </p>
+            <a href="#book" class="app-btn">Explore Now →</a>
+        </div>
+
+        <div class="app-image">
+            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9a?w=600" alt="Mobile application">
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+                <h2>✈ ADISKYWAYS</h2>
+                <p>Making every journey special. Fly beyond your imagination.</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>ABOUT US</h3>
+                <a href="#experience">Our Story</a>
+                <a href="#experience">Our Services</a>
+                <a href="#experience">Careers</a>
+                <a href="#experience">News</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>BOOK & MANAGE</h3>
+                <a href="#book">Book Flights</a>
+                <a href="#book">Manage Booking</a>
+                <a href="#book">Web Check-in</a>
+                <a href="#book">Flight Status</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>TRAVEL INFORMATION</h3>
+                <a href="#destinations">Destinations</a>
+                <a href="#footer">Baggage Rules</a>
+                <a href="#footer">Travel Guidelines</a>
+                <a href="#footer">Help Centre</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>CONTACT</h3>
+                <p>India</p>
+                <p>+91 7843015488</p>
+                <p>aditya@skyways.com</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 SkyWays Airlines. All Rights Reserved.</p>
+            <p>Privacy Policy | Terms & Conditions</p>
+        </div>
+
+    </footer>
+
+</body>
+</html>

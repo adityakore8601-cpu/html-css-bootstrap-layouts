@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Application & Career Portal</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            margin: 0;
+        }
+
+        header {
+            background: #283593;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        .job, .form-box {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 8px gray;
+        }
+
+        h2 {
+            color: #283593;
+        }
+
+        label {
+            display: block;
+            margin-top: 12px;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background: #283593;
+            color: white;
+            padding: 12px;
+            width: 100%;
+            border: none;
+            margin-top: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #1a237e;
+        }
+
+        footer {
+            background: #283593;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>💼 Job Application & Career Portal</h1>
+    <p>Find Your Dream Job Today!</p>
+</header>
+
+<div class="container">
+
+    <h2>Available Job Listings</h2>
+
+    <div class="job">
+        <h2>1. Python Developer</h2>
+        <p><b>Company:</b> Tech Solutions Pvt. Ltd.</p>
+        <p><b>Location:</b> Pune</p>
+        <p><b>Salary:</b> ₹3-5 LPA</p>
+        <p><b>Description:</b> Develop applications using Python programming.</p>
+        <p><b>Requirements:</b></p>
+        <ul>
+            <li>Knowledge of Python</li>
+            <li>Knowledge of MySQL</li>
+            <li>Problem-solving skills</li>
+        </ul>
+    </div>
+
+    <div class="job">
+        <h2>2. Web Developer</h2>
+        <p><b>Company:</b> WebTech Solutions</p>
+        <p><b>Location:</b> Mumbai</p>
+        <p><b>Salary:</b> ₹4-6 LPA</p>
+        <p><b>Description:</b> Create and maintain responsive websites.</p>
+        <p><b>Requirements:</b></p>
+        <ul>
+            <li>HTML and CSS</li>
+            <li>JavaScript</li>
+            <li>Bootstrap knowledge</li>
+        </ul>
+    </div>
+
+    <div class="job">
+        <h2>3. Data Analyst</h2>
+        <p><b>Company:</b> Data Solutions Pvt. Ltd.</p>
+        <p><b>Location:</b> Bangalore</p>
+        <p><b>Salary:</b> ₹5-7 LPA</p>
+        <p><b>Description:</b> Analyze data and prepare reports.</p>
+        <p><b>Requirements:</b></p>
+        <ul>
+            <li>Python programming</li>
+            <li>Excel and SQL</li>
+            <li>Data visualization</li>
+        </ul>
+    </div>
+
+    <div class="form-box">
+
+        <h2>Job Application Form</h2>
+
+        <form>
+
+            <label>Full Name:</label>
+            <input type="text" placeholder="Enter your name" required>
+
+            <label>Email:</label>
+            <input type="email" placeholder="Enter email" required>
+
+            <label>Mobile Number:</label>
+            <input type="tel" placeholder="Enter mobile number" required>
+
+            <label>Select Job:</label>
+            <select required>
+                <option value="">Select Job Position</option>
+                <option>Python Developer</option>
+                <option>Web Developer</option>
+                <option>Data Analyst</option>
+            </select>
+
+            <label>Qualification:</label>
+            <input type="text" placeholder="Enter qualification">
+
+            <label>Skills:</label>
+            <textarea placeholder="Enter your skills"></textarea>
+
+            <label>Upload Resume:</label>
+            <input type="file" accept=".pdf,.doc,.docx" required>
+
+            <button type="submit">Apply Now</button>
+
+        </form>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Job Application & Career Portal</p>
+</footer>
+
+</body>
+</html>

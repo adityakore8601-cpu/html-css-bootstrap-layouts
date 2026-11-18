@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Fest Registration</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e8f0fe;
+        }
+
+        .container {
+            width: 400px;
+            background-color: white;
+            margin: 40px auto;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px gray;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333399;
+        }
+
+        label {
+            display: block;
+            margin-top: 12px;
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .gender input {
+            width: auto;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 20px;
+            background-color: #333399;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #5555cc;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>College Fest Registration</h1>
+
+        <form>
+
+            <label>Student Name:</label>
+            <input type="text" placeholder="Enter your name"
+                   required>
+
+            <label>Email Address:</label>
+            <input type="email" placeholder="Enter your email"
+                   required>
+
+            <label>Phone Number:</label>
+            <input type="tel" placeholder="Enter phone number"
+                   pattern="[0-9]{10}" required>
+
+            <label>Gender:</label>
+            <div class="gender">
+                <input type="radio" name="gender" value="Male" required> Male
+                <input type="radio" name="gender" value="Female"> Female
+                <input type="radio" name="gender" value="Other"> Other
+            </div>
+
+            <label>Select Course:</label>
+            <select required>
+                <option value="">Choose Course</option>
+                <option>B.Tech</option>
+                <option>BCA</option>
+                <option>Bvoc</option>
+                <option>polytechnic</option>
+                <option>MCA</option>
+            </select>
+
+            <label>Select Event:</label>
+            <select required>
+                <option value="">Choose Event</option>
+                <option>Dance Competition</option>
+                <option>Singing Competition</option>
+                <option>Technical Quiz</option>
+                <option>Photography</option>
+                <option>Sports</option>
+            </select>
+
+            <label>Event Date:</label>
+            <input type="date" required>
+
+            <button type="submit">Register Now</button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>

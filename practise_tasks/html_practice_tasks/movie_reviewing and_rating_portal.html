@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Review Portal</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eeeeee;
+            margin: 0;
+        }
+
+        header {
+            background-color: #212121;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 25px;
+        }
+
+        .movie {
+            width: 280px;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px gray;
+            padding-bottom: 15px;
+        }
+
+        .movie img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .content {
+            padding: 15px;
+        }
+
+        h2 {
+            color: #d32f2f;
+        }
+
+        .rating {
+            color: orange;
+            font-weight: bold;
+        }
+
+        a {
+            display: inline-block;
+            background: #d32f2f;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background: #9a0007;
+        }
+
+        footer {
+            background: #212121;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🎬 Movie Review & Rating Portal</h1>
+    <p>Explore Movies and Read Reviews</p>
+</header>
+
+<div class="container">
+
+    <div class="movie">
+        <img src="https://image.tmdb.org/t/p/w500/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg" alt="Spider-Man">
+        <div class="content">
+            <h2>Spider-Man: No Way Home</h2>
+            <p><b>Cast:</b> Tom Holland, Zendaya</p>
+            <p><b>Release:</b> 2021</p>
+            <p class="rating">Rating: ⭐ 8.2/10</p>
+            <p><b>Review:</b> An exciting superhero movie with amazing action and adventure.</p>
+            <a href="https://www.youtube.com/results?search_query=spider+man+no+way+home+trailer" target="_blank">Watch Trailer</a>
+        </div>
+    </div>
+
+    <div class="movie">
+        <img src="https://image.tmdb.org/t/p/w500/q719jXXEzOoYaps6babgKnONONX.jpg" alt="Avatar">
+        <div class="content">
+            <h2>Avatar</h2>
+            <p><b>Cast:</b> Sam Worthington, Zoe Saldana</p>
+            <p><b>Release:</b> 2009</p>
+            <p class="rating">Rating: ⭐ 7.9/10</p>
+            <p><b>Review:</b> A visually beautiful science fiction adventure film.</p>
+            <a href="https://www.youtube.com/results?search_query=avatar+2009+trailer" target="_blank">Watch Trailer</a>
+        </div>
+    </div>
+
+    <div class="movie">
+        <img src="https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg" alt="Oppenheimer">
+        <div class="content">
+            <h2>Oppenheimer</h2>
+            <p><b>Cast:</b> Cillian Murphy, Emily Blunt</p>
+            <p><b>Release:</b> 2023</p>
+            <p class="rating">Rating: ⭐ 8.3/10</p>
+            <p><b>Review:</b> A powerful historical drama with excellent performances.</p>
+            <a href="https://www.youtube.com/results?search_query=oppenheimer+trailer" target="_blank">Watch Trailer</a>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Movie Review Portal</p>
+</footer>
+
+</body>
+</html>

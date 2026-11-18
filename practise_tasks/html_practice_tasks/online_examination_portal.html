@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Examination Portal</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e8eaf6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            width: 65%;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+        }
+
+        h1 {
+            text-align: center;
+            color: #303f9f;
+        }
+
+        h2 {
+            color: #303f9f;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input[type="text"], input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            margin-top: 5px;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+        }
+
+        .question {
+            background: #f3f4fc;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 8px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #303f9f;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #1a237e;
+        }
+
+        @media(max-width: 600px) {
+            .container {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>📝 Online Examination Portal</h1>
+
+    <h2>Student Details</h2>
+
+    <form>
+
+        <label>Student Name:</label>
+        <input type="text" placeholder="Enter student name" required>
+
+        <label>Roll Number:</label>
+        <input type="text" placeholder="Enter roll number" required>
+
+        <label>Email:</label>
+        <input type="email" placeholder="Enter email" required>
+
+        <h2>Examination Instructions</h2>
+
+        <ul>
+            <li>Read all questions carefully.</li>
+            <li>Each question carries one mark.</li>
+            <li>Select the correct answer.</li>
+            <li>Submit your answers after completion.</li>
+        </ul>
+
+        <h2>Multiple Choice Questions</h2>
+
+        <div class="question">
+            <p><b>1. Which language is used for web development?</b></p>
+
+            <label><input type="radio" name="q1" value="HTML"> HTML</label>
+            <label><input type="radio" name="q1" value="Python"> Python</label>
+            <label><input type="radio" name="q1" value="C"> C</label>
+            <label><input type="radio" name="q1" value="Java"> Java</label>
+        </div>
+
+        <div class="question">
+            <p><b>2. Which tag is used to create a hyperlink?</b></p>
+
+            <label><input type="radio" name="q2" value="a"> &lt;a&gt;</label>
+            <label><input type="radio" name="q2" value="p"> &lt;p&gt;</label>
+            <label><input type="radio" name="q2" value="h1"> &lt;h1&gt;</label>
+            <label><input type="radio" name="q2" value="br"> &lt;br&gt;</label>
+        </div>
+
+        <div class="question">
+            <p><b>3. Which are programming languages?</b></p>
+
+            <label><input type="checkbox" name="q3" value="Python"> Python</label>
+            <label><input type="checkbox" name="q3" value="Java"> Java</label>
+            <label><input type="checkbox" name="q3" value="HTML"> HTML</label>
+            <label><input type="checkbox" name="q3" value="C++"> C++</label>
+        </div>
+
+        <div class="question">
+            <p><b>4. Which CSS property changes text color?</b></p>
+
+            <label><input type="radio" name="q4" value="color"> color</label>
+            <label><input type="radio" name="q4" value="background"> background</label>
+            <label><input type="radio" name="q4" value="font-size"> font-size</label>
+            <label><input type="radio" name="q4" value="margin"> margin</label>
+        </div>
+
+        <button type="submit">Submit Examination</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>

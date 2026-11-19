@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Travel Destination Gallery</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f6fc;
+        }
+
+        header {
+            background: #1565c0;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        h2 {
+            text-align: center;
+            margin: 25px;
+            color: #1565c0;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 25px;
+        }
+
+        .destination {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            height: 250px;
+            box-shadow: 0 4px 10px gray;
+        }
+
+        .destination img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .destination:hover img {
+            transform: scale(1.2);
+        }
+
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding: 20px;
+            color: white;
+            background: linear-gradient(transparent, black);
+            text-align: center;
+        }
+
+        .destination:hover .overlay {
+            background: rgba(0,0,0,0.7);
+        }
+
+        footer {
+            background: #1565c0;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        @media(max-width: 768px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media(max-width: 500px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🌍 Travel Destination Gallery</h1>
+    <p>Explore Beautiful Places Around the World</p>
+</header>
+
+<h2>Popular Destinations</h2>
+
+<div class="gallery">
+
+    <div class="destination">
+        <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=600" alt="New York">
+        <div class="overlay">
+            <h3>New York</h3>
+            <p>United States</p>
+        </div>
+    </div>
+
+    <div class="destination">
+        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=600" alt="Paris">
+        <div class="overlay">
+            <h3>Paris</h3>
+            <p>France</p>
+        </div>
+    </div>
+
+    <div class="destination">
+        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600" alt="Dubai">
+        <div class="overlay">
+            <h3>Dubai</h3>
+            <p>United Arab Emirates</p>
+        </div>
+    </div>
+
+    <div class="destination">
+        <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=600" alt="Tokyo">
+        <div class="overlay">
+            <h3>Tokyo</h3>
+            <p>Japan</p>
+        </div>
+    </div>
+
+    <div class="destination">
+        <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=600" alt="Bali">
+        <div class="overlay">
+            <h3>Bali</h3>
+            <p>Indonesia</p>
+        </div>
+    </div>
+
+    <div class="destination">
+        <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=600" alt="Taj Mahal">
+        <div class="overlay">
+            <h3>Agra</h3>
+            <p>India</p>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Travel Gallery | Explore the World</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Creative Pricing Plans</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            margin: 0;
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 40px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .card {
+            width: 270px;
+            background: white;
+            text-align: center;
+            padding: 30px 20px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px gray;
+            border: 2px solid transparent;
+            transition: 0.4s;
+        }
+
+        .card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 10px 25px gray;
+        }
+
+        .basic {
+            border-color: #2196f3;
+        }
+
+        .pro {
+            border-color: #4caf50;
+        }
+
+        .premium {
+            border-color: #ff9800;
+        }
+
+        .basic h2 {
+            color: #2196f3;
+        }
+
+        .pro h2 {
+            color: #4caf50;
+        }
+
+        .premium h2 {
+            color: #ff9800;
+        }
+
+        .price {
+            font-size: 30px;
+            font-weight: bold;
+            margin: 20px;
+            color: #333;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        button {
+            padding: 12px 25px;
+            border: none;
+            color: white;
+            border-radius: 25px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        .basic button {
+            background: #2196f3;
+        }
+
+        .pro button {
+            background: #4caf50;
+        }
+
+        .premium button {
+            background: #ff9800;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+            opacity: 0.8;
+        }
+
+        @media(max-width: 600px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Our Creative Pricing Plans</h1>
+
+    <div class="container">
+
+       
+        <div class="card basic">
+            <h2>Basic Plan</h2>
+
+            <div class="price">₹499 / Month</div>
+
+            <ul>
+                <li>5 Projects</li>
+                <li>10 GB Storage</li>
+                <li>Email Support</li>
+                <li>Basic Features</li>
+            </ul>
+
+            <button>Choose Basic</button>
+        </div>
+
+        
+        <div class="card pro">
+            <h2>Pro Plan</h2>
+
+            <div class="price">₹999 / Month</div>
+
+            <ul>
+                <li>20 Projects</li>
+                <li>50 GB Storage</li>
+                <li>Priority Support</li>
+                <li>Advanced Features</li>
+            </ul>
+
+            <button>Choose Pro</button>
+        </div>
+
+        
+        <div class="card premium">
+            <h2>Premium Plan</h2>
+
+            <div class="price">₹1499 / Month</div>
+
+            <ul>
+                <li>Unlimited Projects</li>
+                <li>100 GB Storage</li>
+                <li>24/7 Support</li>
+                <li>All Premium Features</li>
+            </ul>
+
+            <button>Choose Premium</button>
+        </div>
+
+    </div>
+
+</body>
+</html>

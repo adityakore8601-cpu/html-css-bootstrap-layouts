@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Modern Login & Signup UI</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .form-box {
+            background: white;
+            width: 320px;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+        }
+
+        h2 {
+            text-align: center;
+            color: #667eea;
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            margin-top: 12px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-top: 7px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        input:focus {
+            border-color: #667eea;
+            box-shadow: 0 0 8px #667eea;
+        }
+
+        input:invalid:not(:placeholder-shown) {
+            border-color: red;
+        }
+
+        input:valid:not(:placeholder-shown) {
+            border-color: green;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            margin-top: 20px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #764ba2;
+            transform: scale(1.03);
+        }
+
+        p {
+            text-align: center;
+            color: gray;
+        }
+
+        a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Login Form -->
+    <div class="form-box">
+
+        <h2>Login Form</h2>
+
+        <form>
+            <label>Email Address</label>
+            <input type="email" placeholder="Enter email" required>
+
+            <label>Password</label>
+            <input type="password" placeholder="Enter password"
+                   minlength="6" required>
+
+            <button type="submit">Login</button>
+
+            <p>Forgot Password? <a href="#">Click Here</a></p>
+        </form>
+
+    </div>
+
+    <!-- Signup Form -->
+    <div class="form-box">
+
+        <h2>Signup Form</h2>
+
+        <form>
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter your name" required>
+
+            <label>Email Address</label>
+            <input type="email" placeholder="Enter email" required>
+
+            <label>Password</label>
+            <input type="password" placeholder="Create password"
+                   minlength="6" required>
+
+            <label>Confirm Password</label>
+            <input type="password" placeholder="Confirm password"
+                   minlength="6" required>
+
+            <button type="submit">Register</button>
+
+            <p>Already have an account? <a href="#">Login</a></p>
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+</html>

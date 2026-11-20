@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animated Timeline</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f2f5;
+            margin: 0;
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #26345a;
+        }
+
+        .timeline {
+            max-width: 600px;
+            margin: 30px auto;
+            border-left: 4px solid #4b65d1;
+            padding-left: 25px;
+        }
+
+        .item {
+            background: white;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px #ddd;
+            position: relative;
+            transition: 0.3s;
+            animation: slide 1s ease;
+        }
+
+        .item:hover {
+            transform: translateX(8px);
+        }
+
+        .item::before {
+            content: "";
+            position: absolute;
+            left: -36px;
+            top: 25px;
+            width: 16px;
+            height: 16px;
+            background: #4b65d1;
+            border-radius: 50%;
+        }
+
+        h3 {
+            color: #26345a;
+            margin-top: 0;
+        }
+
+        p {
+            color: #666;
+        }
+
+        .bar {
+            background: #ddd;
+            height: 10px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .progress {
+            height: 10px;
+            background: #4b65d1;
+            border-radius: 10px;
+            animation: grow 2s ease;
+        }
+
+        .completed {
+            width: 100%;
+        }
+
+        .working {
+            width: 60%;
+        }
+
+        .upcoming {
+            width: 0%;
+        }
+
+        span {
+            color: #4b65d1;
+            font-weight: bold;
+        }
+
+        @keyframes slide {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes grow {
+            from {
+                width: 0;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>My Learning Journey</h1>
+
+    <div class="timeline">
+
+        <div class="item">
+            <h3>HTML Basics</h3>
+            <p>Learned HTML tags and elements.</p>
+            <div class="bar">
+                <div class="progress completed"></div>
+            </div>
+            <span>100% Completed</span>
+        </div>
+
+        <div class="item">
+            <h3>CSS Styling</h3>
+            <p>Learned colors, layouts and styling.</p>
+            <div class="bar">
+                <div class="progress completed"></div>
+            </div>
+            <span>100% Completed</span>
+        </div>
+
+        <div class="item">
+            <h3>JavaScript</h3>
+            <p>Learning programming basics.</p>
+            <div class="bar">
+                <div class="progress working"></div>
+            </div>
+            <span>60% In Progress</span>
+        </div>
+
+        <div class="item">
+            <h3>Final Project</h3>
+            <p>Build a complete website.</p>
+            <div class="bar">
+                <div class="progress upcoming"></div>
+            </div>
+            <span>0% Upcoming</span>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CloudSoft Landing Page</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f5ff;
+            color: #333;
+        }
+
+        /* Navbar */
+        nav {
+            background: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h2 {
+            color: #5046d8;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin: 10px;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: #e9eaff;
+        }
+
+        .hero h1 {
+            font-size: 38px;
+            color: #25245b;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            margin-bottom: 25px;
+        }
+
+        button {
+            background: #5046d8;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #3429a8;
+        }
+
+        /* Features */
+        .features {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .feature-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 25px;
+        }
+
+        .feature {
+            background: white;
+            padding: 25px;
+            width: 220px;
+            border-radius: 10px;
+        }
+
+        .feature h3 {
+            color: #5046d8;
+            margin-bottom: 10px;
+        }
+
+        /* Pricing */
+        .pricing {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .price-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 25px;
+        }
+
+        .price {
+            background: white;
+            padding: 30px;
+            width: 250px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px #ddd;
+        }
+
+        .price h3 {
+            color: #5046d8;
+        }
+
+        .price h2 {
+            margin: 15px;
+        }
+
+        /* Footer */
+        footer {
+            background: #25245b;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 30px;
+        }
+
+        /* Responsive */
+        @media(max-width: 600px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .hero h1 {
+                font-size: 28px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <h2>CloudSoft</h2>
+
+        <div>
+            <a href="#">Home</a>
+            <a href="#features">Features</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+
+        <h1>Grow Your Business With Us</h1>
+
+        <p>
+            Simple and powerful tools to manage your business.
+        </p>
+
+        <button onclick="location.href='#pricing'">
+            Get Started
+        </button>
+
+    </section>
+
+    <!-- Features -->
+    <section class="features" id="features">
+
+        <h2>Our Features</h2>
+
+        <div class="feature-container">
+
+            <div class="feature">
+                <h3>Fast</h3>
+                <p>Quick and smooth performance.</p>
+            </div>
+
+            <div class="feature">
+                <h3>Secure</h3>
+                <p>Your data is always protected.</p>
+            </div>
+
+            <div class="feature">
+                <h3>Support</h3>
+                <p>24/7 customer assistance.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing" id="pricing">
+
+        <h2>Our Pricing</h2>
+
+        <div class="price-container">
+
+            <div class="price">
+                <h3>Basic Plan</h3>
+                <h2>₹499/month</h2>
+                <p>Basic features included.</p>
+                <br>
+                <button>Choose Plan</button>
+            </div>
+
+            <div class="price">
+                <h3>Premium Plan</h3>
+                <h2>₹999/month</h2>
+                <p>All premium features.</p>
+                <br>
+                <button>Choose Plan</button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+
+        <h3>CloudSoft</h3>
+
+        <p>Contact: info@cloudsoft.com</p>
+
+        <p>© 2026 CloudSoft. All Rights Reserved.</p>
+
+    </footer>
+
+</body>
+</html>

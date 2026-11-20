@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Admission Portal</title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+
+            <a class="navbar-brand" href="#">
+                College Portal
+            </a>
+
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Admission</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Admission Form -->
+    <div class="container my-5">
+
+        <div class="row justify-content-center">
+
+            <div class="col-md-8 col-lg-7">
+
+                <div class="card shadow">
+
+                    <div class="card-header bg-primary text-white text-center">
+                        <h3>Student Admission Form</h3>
+                    </div>
+
+                    <div class="card-body p-4">
+
+                        <form>
+
+                            <!-- Name -->
+                            <div class="mb-3">
+                                <label class="form-label">Full Name</label>
+
+                                <input type="text"
+                                       class="form-control"
+                                       placeholder="Enter your name"
+                                       required>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="mb-3">
+                                <label class="form-label">Email Address</label>
+
+                                <input type="email"
+                                       class="form-control"
+                                       placeholder="Enter your email"
+                                       required>
+                            </div>
+
+                            <!-- Mobile -->
+                            <div class="mb-3">
+                                <label class="form-label">Mobile Number</label>
+
+                                <input type="tel"
+                                       class="form-control"
+                                       placeholder="Enter mobile number"
+                                       pattern="[0-9]{10}"
+                                       required>
+                            </div>
+
+                            <!-- Gender -->
+                            <div class="mb-3">
+
+                                <label class="form-label">Gender</label>
+
+                                <div>
+                                    <input type="radio"
+                                           name="gender"
+                                           class="form-check-input"
+                                           required>
+                                    Male
+
+                                    <input type="radio"
+                                           name="gender"
+                                           class="form-check-input ms-3">
+                                    Female
+
+                                    <input type="radio"
+                                           name="gender"
+                                           class="form-check-input ms-3">
+                                    Other
+                                </div>
+
+                            </div>
+
+                            <!-- Course -->
+                            <div class="mb-3">
+
+                                <label class="form-label">Select Course</label>
+
+                                <select class="form-select" required>
+
+                                    <option value="">Choose Course</option>
+                                    <option>B.Tech</option>
+                                    <option>BCA</option>
+                                    <option>BBA</option>
+                                    <option>B.Sc</option>
+                                    <option>MCA</option>
+
+                                </select>
+
+                            </div>
+
+                            <!-- Date of Birth -->
+                            <div class="mb-3">
+
+                                <label class="form-label">Date of Birth</label>
+
+                                <input type="date"
+                                       class="form-control"
+                                       required>
+
+                            </div>
+
+                            <!-- Address -->
+                            <div class="mb-3">
+
+                                <label class="form-label">Address</label>
+
+                                <textarea class="form-control"
+                                          rows="3"
+                                          placeholder="Enter your address"
+                                          required></textarea>
+
+                            </div>
+
+                            <!-- Checkbox -->
+                            <div class="form-check mb-3">
+
+                                <input type="checkbox"
+                                       class="form-check-input"
+                                       required>
+
+                                <label class="form-check-label">
+                                    I agree to the terms and conditions.
+                                </label>
+
+                            </div>
+
+                            <!-- Submit Button -->
+                            <button type="submit"
+                                    class="btn btn-primary w-100">
+
+                                Submit Application
+
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-3">
+
+        <p class="mb-0">
+            © 2026 College Portal | All Rights Reserved
+        </p>
+
+    </footer>
+
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+</html>
